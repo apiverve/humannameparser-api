@@ -1,32 +1,34 @@
 openapi: 3.0.4
 info:
   title: Human Name Parser
-  description: Human Name Parser is a simple tool for parsing human names into their components. It returns the parsed components of the human name.
+  description: >-
+    Human Name Parser is a simple tool for parsing human names into their
+    components. It returns the parsed components of the human name.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/humannameparser:
     get:
       summary: Parse Human Name
-      description: Human Name Parser is a simple tool for parsing human names into their components. It returns the parsed components of the human name.
+      description: Parse a human name into its components
       operationId: humannameparser
       parameters:
-      - name: name
-        in: query
-        schema:
-          type: string
-        required: true
-        description: The human name to parse
-        example: MR. MARTINO PETROS DE FLORENCE (TINO) Jr.
+        - name: name
+          in: query
+          schema:
+            type: string
+          required: true
+          description: The human name to parse
+          example: MR. MARTINO PETROS DE FLORENCE (TINO) Jr.
       responses:
         '200':
           description: Successful Response
@@ -42,11 +44,11 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   name: MR. MARTINO PETROS DE FLORENCE (TINO) Jr.
                   parsed:
@@ -61,7 +63,7 @@ paths:
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -69,4 +71,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
