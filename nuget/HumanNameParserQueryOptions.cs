@@ -12,7 +12,6 @@ namespace APIVerve.API.HumanNameParser
     {
         /// <summary>
         /// The human name to parse
-        /// Example: MR. MARTINO PETROS DE FLORENCE (TINO) Jr.
         /// </summary>
         [JsonProperty("name")]
         public string Name { get; set; }
