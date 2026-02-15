@@ -26,7 +26,7 @@ Add the dependency:
 
 ```gradle
 dependencies {
-    implementation 'com.github.apiverve:humannameparser-api:1.1.12'
+    implementation 'com.github.apiverve:humannameparser-api:1.1.13'
 }
 ```
 
@@ -47,7 +47,7 @@ HumanNameParserAPIClient client = new HumanNameParserAPIClient("YOUR_API_KEY");
 try {
     // Prepare query parameters
     Map<String, Object> parameters = new HashMap<>();
-    parameters.put("key", "value");
+    parameters.put("name", "MR. MARTINO PETROS DE FLORENCE (TINO) Jr.");
 
     // Execute the request
     APIResponse response = client.execute(parameters);
@@ -135,7 +135,7 @@ For detailed API documentation, visit: [https://docs.apiverve.com/ref/humannamep
 
 ## Get Your API Key
 
-Get your API key from [https://apiverve.com](https://apiverve.com)
+Get your API key from [https://apiverve.com](https://apiverve.com?utm_source=android&utm_medium=readme)
 
 ---
 
@@ -162,4 +162,4 @@ This SDK is released under the MIT License. See [LICENSE](LICENSE) for details.
 
 ## About APIVerve
 
-[APIVerve](https://apiverve.com) provides production-ready REST APIs for developers. Fast, reliable, and easy to integrate.
+[APIVerve](https://apiverve.com?utm_source=android&utm_medium=readme) provides production-ready REST APIs for developers. Fast, reliable, and easy to integrate.
