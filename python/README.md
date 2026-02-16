@@ -224,8 +224,9 @@ from apiverve_humannameparser.apiClient import HumannameparserAPIClient
 
 api = HumannameparserAPIClient("[YOUR_API_KEY]")
 
+query = { "name": "MR. MARTINO PETROS DE FLORENCE (TINO) Jr." }
+
 try:
-    query = { "name": "MR. MARTINO PETROS DE FLORENCE (TINO) Jr." }
     result = api.execute(query)
     print(result)
 finally:
