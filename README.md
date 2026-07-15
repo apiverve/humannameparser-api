@@ -30,7 +30,11 @@ The Human Name Parser API provides a simple, reliable way to integrate human nam
 ```javascript
 async function callHumanNameParserAPI() {
     try {
-        const response = await fetch('https://api.apiverve.com/v1/humannameparser', {
+        const params = new URLSearchParams({
+            name: 'MR. MARTINO PETROS DE FLORENCE (TINO) Jr.'
+        });
+
+        const response = await fetch(`https://api.apiverve.com/v1/humannameparser?${params}`, {
             method: 'GET',
             headers: {
                 'x-api-key': 'YOUR_API_KEY_HERE'
@@ -50,7 +54,7 @@ callHumanNameParserAPI();
 ### Using cURL
 
 ```bash
-curl -X GET "https://api.apiverve.com/v1/humannameparser?param=value" \
+curl -X GET "https://api.apiverve.com/v1/humannameparser?name=MR.%20MARTINO%20PETROS%20DE%20FLORENCE%20(TINO)%20Jr." \
   -H "x-api-key: YOUR_API_KEY_HERE"
 ```
 
@@ -150,7 +154,7 @@ go get github.com/apiverve/humannameparser-api/go
 |---------|---------|
 | **Multi-language SDKs** | Native packages for JavaScript, Python, C#, Go, and Android |
 | **Simple Integration** | Single API key authentication, consistent response format |
-| **Production Ready** | 99.9% uptime, fast response times, used by thousands of developers |
+| **Production Ready** | 99.9% uptime SLA, served from 24 global regions |
 | **Comprehensive Docs** | Full examples, OpenAPI spec, and dedicated support |
 
 ---
@@ -169,7 +173,7 @@ go get github.com/apiverve/humannameparser-api/go
 The Human Name Parser API is commonly used for:
 
 - **Web Applications** - Add human name parser features to your frontend or backend
-- **Mobile Apps** - Native SDKs for iOS and Android development
+- **Mobile Apps** - Native SDKs for Android development
 - **Automation** - Integrate with n8n, Zapier, or custom workflows
 - **SaaS Products** - Enhance your product with human name parser capabilities
 - **Data Pipelines** - Process and analyze data at scale
