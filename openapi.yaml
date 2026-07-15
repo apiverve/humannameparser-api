@@ -58,6 +58,8 @@ paths:
                     last: de Florence
                     nick: Tino
                     suffix: Jr.
+                  initials: MPF
+                  formalName: Mr. de Florence, Martino P. Jr.
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
