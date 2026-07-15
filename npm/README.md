@@ -130,7 +130,9 @@ async function makeRequest() {
       "last": "de Florence",
       "nick": "Tino",
       "suffix": "Jr."
-    }
+    },
+    "initials": "MPF",
+    "formalName": "Mr. de Florence, Martino P. Jr."
   }
 }
 ```
