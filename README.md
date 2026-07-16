@@ -191,11 +191,38 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Human Name Parser API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "name": "MR. MARTINO PETROS DE FLORENCE (TINO) Jr.",
+    "parsed": {
+      "title": "Mr.",
+      "first": "Martino",
+      "middle": "Petros",
+      "last": "de Florence",
+      "nick": "Tino",
+      "suffix": "Jr."
+    },
+    "initials": "MPF",
+    "formalName": "Mr. de Florence, Martino P. Jr."
+  }
 }
 ```
 
