@@ -2,8 +2,9 @@ openapi: 3.0.4
 info:
   title: Human Name Parser
   description: >-
-    Human Name Parser is a simple tool for parsing human names into their
-    components. It returns the parsed components of the human name.
+    Human Name Parser splits full name strings into first, middle, and last
+    names, titles, nicknames, and suffixes. It also generates initials directly
+    from the detected components.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +19,7 @@ servers:
 paths:
   /v1/humannameparser:
     get:
-      summary: Parse Human Name
+      summary: Human Name Parser
       description: Parse a human name into its components
       operationId: humannameparser
       parameters:
