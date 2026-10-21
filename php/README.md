@@ -1,6 +1,6 @@
 # Human Name Parser API - PHP Package
 
-Human Name Parser is a simple tool for parsing human names into their components. It returns the parsed components of the human name.
+Human Name Parser splits full name strings into first, middle, and last names, titles, nicknames, and suffixes. It also generates initials directly from the detected components.
 
 ## Installation
 
@@ -91,11 +91,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/humannameparser?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/humannameparser?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/humannameparser?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/humannameparser?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/humannameparser?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/humannameparser?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License

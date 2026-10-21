@@ -1,7 +1,7 @@
 {
     "name": "apiverve/humannameparser",
-    "description": "Human Name Parser is a simple tool for parsing human names into their components. It returns the parsed components of the human name.",
-    "version": "1.2.0",
+    "description": "Human Name Parser splits full name strings into first, middle, and last names, titles, nicknames, and suffixes. It also generates initials directly from the detected components.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "humannameparser",
-        "human name parser",
-        "human name parser",
-        "parser api",
-        "human name parser tool",
-        "human name parser software"
+        "name parser api",
+        "parse full name",
+        "split first and last name",
+        "extract name prefix and suffix",
+        "parse name string"
     ],
-    "homepage": "https://apiverve.com/marketplace/humannameparser?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/humannameparser?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/humannameparser",
