@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/humannameparser",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Human Name Parser splits full name strings into first, middle, and last names, titles, nicknames, and suffixes. It also generates initials directly from the detected components.",
   "main": "index.js",
   "types": "index.d.ts",
