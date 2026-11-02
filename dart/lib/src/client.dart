@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// Human Name Parser API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/humannameparser?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/humannameparser?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [name] (required) - The human name to parse
